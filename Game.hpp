@@ -93,7 +93,7 @@ protected: // All members here are protected, instead of private for testing pur
 	bool interactive_on; // Controls interactive mode - that means, prints the board as an animation instead of a simple dump to STDOUT 
 	bool print_on; // Allows the printing of the board. Turn this off when you are checking performance (Dry 3, last question)
 
-	// TODO: Add in your variables and synchronization primitives  
+  
     PCQueue<Job*>* jobs_queue;
     uint rows;
     uint cols;
@@ -107,8 +107,6 @@ protected: // All members here are protected, instead of private for testing pur
 
 //Our thread
 class ourThread: public Thread {
-    //PCQueue<Job*>* jobs_queue;
-    //pthread_mutex_t mutex;
     Game* game;
     pthread_mutex_t* mutex;
     PCQueue<Job*>* jobs_queue;
