@@ -51,7 +51,7 @@ void Game::_init_game() {
     //this->cols=lines[0].size();
     //this->board=new vector<string>(rows);
 
-    //ADDED
+    
     this->current=new vector<vector<int>*>;
     for(int i = 0; i < lines.size(); i++){
         vector<string> splited_line=utils::split(lines.at(i),' ');
@@ -200,7 +200,7 @@ double ourThread::getAvgSpecies(vector<vector<int>*>* board, int row,int col){
     return avg;
 }
 
-//ADDED
+
 int ourThread::countLiveNeighbors(vector<vector<int>*>* board, int row,int col){
     int neighbors[8][2]={{-1,-1}, {-1,0} ,{-1,1},
                          {0,-1},{0,1},
@@ -215,7 +215,7 @@ int ourThread::countLiveNeighbors(vector<vector<int>*>* board, int row,int col){
     return count_live;
 }
 
-//ADDED - check
+
 int ourThread::getDominant(vector<vector<int>*>* board, int row,int col){
     int neighbors[9][2]={{-1,-1}, {-1,0} ,{-1,1},
                          {0,-1},{0,0}, {0,1},
