@@ -43,7 +43,7 @@ using std::cerr;
 using std::endl;
 
 typedef unsigned int uint;
-typedef vector<vector<uint>> int_mat; // Use this as your Game Field
+typedef vector<vector<uint>> int_mat;
 
 /*--------------------------------------------------------------------------------
 								  Defines & Macros
@@ -53,7 +53,6 @@ typedef vector<vector<uint>> int_mat; // Use this as your Game Field
 #define DEF_MAT_DELIMITER ' ' // The seperator betweens 0s and 1s in your matrix input file 
 #define DEF_RESULTS_FILE_NAME "results.csv" // The filename of the results 
 
-// Macros - For your comfort
 #define DEBUG 1
 #define DEBUG_MES(mes) if(DEBUG) cout << mes << endl;
 #define user_error(mes,exp) if(!exp){cerr << "Fatal: " <<  mes << endl; exit(1);}
