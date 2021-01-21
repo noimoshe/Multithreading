@@ -107,6 +107,4 @@ void PCQueue<T>::producer_unlock() {
     pthread_cond_signal(&cond_producer);
     pthread_mutex_unlock(&mutex);
 }
-
-// Recommendation: Use the implementation of the std::queue for this exercise
 #endif
