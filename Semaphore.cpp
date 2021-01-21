@@ -1,6 +1,3 @@
-//
-// Created by student on 12/29/20.
-//
 
 #include "Semaphore.hpp"
 
